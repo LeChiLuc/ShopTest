@@ -1,0 +1,35 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Big shope A Ecommerce Category Flat Bootstarp Resposive Website Template | Home :: w3layouts</title>
+    <link href="/Assets/Clients/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="/Assets/Clients/font/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="/Assets/Clients/css/jquery-ui.css" rel="stylesheet" />
+    <!--theme-style-->
+    <link href="/Assets/Clients/css/style.css" rel="stylesheet" type="text/css" media="all" />
+
+    <!--//theme-style-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <!--fonts-->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <!--//fonts-->
+    
+</head>
+<body>
+    <!--header-->
+    @{ Html.RenderAction("_Header","Home");}
+    <!---->
+    <div class="container">
+        @RenderBody()
+        @{ Html.RenderAction("_ProductCategory", "Product");}
+    </div>  
+    @{Html.RenderAction("_Footer", "Home");}
+    <div class="clearfix"> </div>
+    <script src="/Assets/Clients/js/jquery.min.js"></script>
+    <script src="/Assets/Clients/js/jquery-ui.js"></script>
+    <script src="/Assets/Clients/js/controller/common.js"></script>
+    @RenderSection("footerJs",required:false)
+</body>
+</html>

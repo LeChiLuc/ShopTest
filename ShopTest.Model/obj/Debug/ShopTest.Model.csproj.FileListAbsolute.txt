@@ -1,0 +1,10 @@
+D:\_Hoctap\_Project\_MyProjects\Git\ShopTest\ShopTest.Model\bin\Debug\ShopTest.Model.dll.config
+D:\_Hoctap\_Project\_MyProjects\Git\ShopTest\ShopTest.Model\bin\Debug\ShopTest.Model.dll
+D:\_Hoctap\_Project\_MyProjects\Git\ShopTest\ShopTest.Model\bin\Debug\ShopTest.Model.pdb
+D:\_Hoctap\_Project\_MyProjects\Git\ShopTest\ShopTest.Model\bin\Debug\EntityFramework.dll
+D:\_Hoctap\_Project\_MyProjects\Git\ShopTest\ShopTest.Model\bin\Debug\EntityFramework.SqlServer.dll
+D:\_Hoctap\_Project\_MyProjects\Git\ShopTest\ShopTest.Model\bin\Debug\EntityFramework.xml
+D:\_Hoctap\_Project\_MyProjects\Git\ShopTest\ShopTest.Model\bin\Debug\EntityFramework.SqlServer.xml
+D:\_Hoctap\_Project\_MyProjects\Git\ShopTest\ShopTest.Model\obj\Debug\ShopTest.Model.csprojResolveAssemblyReference.cache
+D:\_Hoctap\_Project\_MyProjects\Git\ShopTest\ShopTest.Model\obj\Debug\ShopTest.Model.dll
+D:\_Hoctap\_Project\_MyProjects\Git\ShopTest\ShopTest.Model\obj\Debug\ShopTest.Model.pdb

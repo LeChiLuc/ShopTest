@@ -1,0 +1,5 @@
+D:\_Hoctap\_Project\_MyProjects\Git\ShopTest\ShopTest.Common\bin\Debug\ShopTest.Common.dll
+D:\_Hoctap\_Project\_MyProjects\Git\ShopTest\ShopTest.Common\bin\Debug\ShopTest.Common.pdb
+D:\_Hoctap\_Project\_MyProjects\Git\ShopTest\ShopTest.Common\obj\Debug\ShopTest.Common.csprojResolveAssemblyReference.cache
+D:\_Hoctap\_Project\_MyProjects\Git\ShopTest\ShopTest.Common\obj\Debug\ShopTest.Common.dll
+D:\_Hoctap\_Project\_MyProjects\Git\ShopTest\ShopTest.Common\obj\Debug\ShopTest.Common.pdb
