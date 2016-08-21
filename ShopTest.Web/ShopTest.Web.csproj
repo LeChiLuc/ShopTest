@@ -162,10 +162,14 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\Clients\css\bootstrap.css" />
+    <Content Include="Assets\Clients\css\custom.css" />
     <Content Include="Assets\Clients\css\etalage.css" />
     <Content Include="Assets\Clients\css\form.css" />
     <Content Include="Assets\Clients\css\jquery-ui.css" />
     <Content Include="Assets\Clients\css\style.css" />
+    <Content Include="Assets\Clients\font\css\font-awesome.css" />
+    <Content Include="Assets\Clients\font\css\font-awesome.min.css" />
+    <Content Include="Assets\Clients\font\fonts\fontawesome-webfont.svg" />
     <Content Include="Assets\Clients\images\a-star.png" />
     <Content Include="Assets\Clients\images\arrow1.png" />
     <Content Include="Assets\Clients\images\arrow2.png" />
@@ -236,6 +240,39 @@
     <Content Include="AppSettings.config">
       <SubType>Designer</SubType>
     </Content>
+    <Content Include="Assets\Clients\font\fonts\fontawesome-webfont.eot" />
+    <Content Include="Assets\Clients\font\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Assets\Clients\font\fonts\fontawesome-webfont.woff" />
+    <Content Include="Assets\Clients\font\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Assets\Clients\font\fonts\FontAwesome.otf" />
+    <Content Include="Assets\Clients\font\less\animated.less" />
+    <Content Include="Assets\Clients\font\less\bordered-pulled.less" />
+    <Content Include="Assets\Clients\font\less\core.less" />
+    <Content Include="Assets\Clients\font\less\fixed-width.less" />
+    <Content Include="Assets\Clients\font\less\font-awesome.less" />
+    <Content Include="Assets\Clients\font\less\icons.less" />
+    <Content Include="Assets\Clients\font\less\larger.less" />
+    <Content Include="Assets\Clients\font\less\list.less" />
+    <Content Include="Assets\Clients\font\less\mixins.less" />
+    <Content Include="Assets\Clients\font\less\path.less" />
+    <Content Include="Assets\Clients\font\less\rotated-flipped.less" />
+    <Content Include="Assets\Clients\font\less\screen-reader.less" />
+    <Content Include="Assets\Clients\font\less\stacked.less" />
+    <Content Include="Assets\Clients\font\less\variables.less" />
+    <Content Include="Assets\Clients\font\scss\font-awesome.scss" />
+    <Content Include="Assets\Clients\font\scss\_animated.scss" />
+    <Content Include="Assets\Clients\font\scss\_bordered-pulled.scss" />
+    <Content Include="Assets\Clients\font\scss\_core.scss" />
+    <Content Include="Assets\Clients\font\scss\_fixed-width.scss" />
+    <Content Include="Assets\Clients\font\scss\_icons.scss" />
+    <Content Include="Assets\Clients\font\scss\_larger.scss" />
+    <Content Include="Assets\Clients\font\scss\_list.scss" />
+    <Content Include="Assets\Clients\font\scss\_mixins.scss" />
+    <Content Include="Assets\Clients\font\scss\_path.scss" />
+    <Content Include="Assets\Clients\font\scss\_rotated-flipped.scss" />
+    <Content Include="Assets\Clients\font\scss\_screen-reader.scss" />
+    <Content Include="Assets\Clients\font\scss\_stacked.scss" />
+    <Content Include="Assets\Clients\font\scss\_variables.scss" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -267,6 +304,7 @@
     <Content Include="Views\Product\Category.cshtml" />
     <Content Include="Views\Product\Search.cshtml" />
     <Content Include="Views\Product\Detail.cshtml" />
+    <Content Include="Views\Product\ListByTag.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

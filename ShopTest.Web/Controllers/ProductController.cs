@@ -77,8 +77,26 @@ namespace ShopTest.Web.Controllers
             var productModel = _productService.GetById(id);
             ViewBag.relatedProduct = _productService.GetReatedProduct(id,6);
 
+            ViewBag.Tags = _productService.GetListTagByProductId(id);
             
             return View(productModel);
+        }
+        public ActionResult ListByTag(string tagId,int page=1)
+        {
+            int pageSize = int.Parse(ConfigHelper.GetByKey("PageSize"));
+            int totalRow = 0;
+            var productModel = _productService.GetListProductByTag(tagId, page, pageSize, out totalRow);
+            int totalPage = (int)Math.Ceiling((double)totalRow / pageSize);
+            ViewBag.Tag = _productService.GetTag(tagId);
+            var paginationSet = new PaginationSet<Product>()
+            {
+                Items = productModel,
+                MaxPage = int.Parse(ConfigHelper.GetByKey("MaxPage")),
+                Page = page,
+                TotalCount = totalRow,
+                TotalPages = totalPage,
+            };
+            return View(paginationSet);
         }
     }
 }
