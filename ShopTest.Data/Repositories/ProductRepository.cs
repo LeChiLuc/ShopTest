@@ -1,8 +1,8 @@
-﻿using ShopTest.Data.Infrastructure;
+﻿
+using ShopTest.Data.Infrastructure;
 using ShopTest.Model.Models;
 using System.Collections.Generic;
 using System.Linq;
-using TeduShop.Data.Infrastructure;
 
 namespace ShopTest.Data.Repositories
 {

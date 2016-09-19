@@ -1,4 +1,4 @@
-namespace ShopTest.Data.Migrations
+﻿namespace ShopTest.Data.Migrations
 {
     using Model.Models;
     using System;
@@ -18,7 +18,8 @@ namespace ShopTest.Data.Migrations
         {
             //  This method will be called after migrating to the latest version.
             CreateSlide(context);
-            
+            CreatePage(context);
+            CreateContactDetail(context);
         }
         private void CreateUser(ShopTestDbContext context)
         {
@@ -66,6 +67,41 @@ namespace ShopTest.Data.Migrations
                 context.SaveChanges();
             }
            
+        }
+        private void CreatePage(ShopTestDbContext context)
+        {
+            if(context.Pages.Count()==0)
+            {
+                var page = new Page()
+                {
+                    Name= "Giới thiệu",
+                    Alias="gioi-thieu",
+                    Content = @"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?",
+                    Status =true
+                };
+                context.Pages.Add(page);
+                context.SaveChanges();
+            }
+        }
+        private void CreateContactDetail(ShopTestDbContext context)
+        {
+            if (context.ContactDetails.Count() == 0)
+            {
+                var contactDetail = new ShopTest.Model.Models.ContactDetail()
+                {
+                    Name = "Harley Quinn",
+                    Address = "Harley Quinn",
+                    Email = "leluc276@gmail.com",
+                    Lat = 21.0050024,
+                    Lng = 105.8210348,
+                    Phone = "0921373777",
+                    Website = "http://tedu.com.vn",
+                    Other = "",
+                    Status = true
+                };
+                context.ContactDetails.Add(contactDetail);
+                context.SaveChanges();
+            }
         }
     }
 }

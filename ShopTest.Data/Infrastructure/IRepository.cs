@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 
-namespace TeduShop.Data.Infrastructure
+namespace ShopTest.Data.Infrastructure
 {
     public interface IRepository<T> where T : class
     {

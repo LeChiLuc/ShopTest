@@ -24,6 +24,7 @@ namespace ShopTest.Web.Controllers
             this._postService = postService;
         }
         [ChildActionOnly]
+        [OutputCache(Duration =3600)]
         public ActionResult _ProductCategory()
         {
             var model = _productCategoryService.GetAll();

@@ -1,0 +1,56 @@
+﻿@model ShopTest.Web.Models.FeedbackViewModel
+
+@{
+    ViewBag.Title = "Liên hệ";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@section footerJs{
+
+@*<script src="~/Assets/Clients/js/controller/contact.js"></script>*@
+    
+<script 
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3_6FaZuB50213_LmX06r0H5SOeLldAOI">
+</script>
+<script src="/Assets/Clients/js/controller/contact.js"></script>
+    <style>
+        #map{
+            height: 600px;
+        }
+    </style>
+    }
+<input type="hidden" id="hidAddress"value="@Model.ContactDetail.Name<br />Điện thoại:@Model.ContactDetail.Phone <br>Địa chỉ: @Model.ContactDetail.Address" />
+<input type="hidden" id="hidLat" value="@Model.ContactDetail.Lat " />
+<input type="hidden" id="hidLng" value="@Model.ContactDetail.Lng" />
+<input type="hidden" id="hidName" value="@Model.ContactDetail.Name" />
+<div class="main">
+    <div class="reservation_top">
+        <div class="contact_right">
+            <h3>Thông tin liên hệ</h3>
+            <address class="address">
+                <p>@Model.ContactDetail.Address.</p>
+                <dl>
+                    <dt> </dt>
+                    <dd>Điện thoại: <span>@Model.ContactDetail.Phone</span></dd>
+                    <dd>E-mail:&nbsp; <a href="mailto:@(Model.ContactDetail.Email)">@(Model.ContactDetail.Email)</a></dd>
+                </dl>
+            </address>
+            <div class="clearfix"></div>
+            <div id="map"></div>
+        </div>
+    </div>
+    <div class="reservation_top">
+        <div class="contact_right">
+            <h3>Gửi thông tin liên hệ</h3>
+            <div class="contact-form">
+                @using (Html.BeginForm("SendFeedback", "Contact", FormMethod.Post))
+                {
+                    @Html.TextBoxFor(model => model.Name, new { @class = "textbox" });
+                    @Html.TextBoxFor(model => model.Email, new { @class = "textbox" });
+                    @Html.TextAreaFor(model => model.Message);
+                    <input type="submit" value="Gửi">
+                    <div class="clearfix"> </div>
+                }              
+            </div>
+        </div>
+    </div>
+</div>

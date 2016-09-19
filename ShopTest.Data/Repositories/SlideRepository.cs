@@ -1,6 +1,6 @@
-﻿using ShopTest.Data.Infrastructure;
+﻿
+using ShopTest.Data.Infrastructure;
 using ShopTest.Model.Models;
-using TeduShop.Data.Infrastructure;
 
 namespace ShopTest.Data.Repositories
 {
