@@ -18,6 +18,7 @@ namespace ShopTest.Web.Controllers
             this._productCategoryService = productCategoryService;
             this._slideService = slideService;
         }
+        [OutputCache(Duration = 60,Location =System.Web.UI.OutputCacheLocation.Server)]
         public ActionResult Index()
         {
             ViewBag.NewProduct = _productService.ListNewProduct(3);
@@ -26,11 +27,13 @@ namespace ShopTest.Web.Controllers
             return View(model);
         }
         [ChildActionOnly]
+        [OutputCache(Duration =3600)]
         public ActionResult _Footer()
         {
             return PartialView();
         }
         [ChildActionOnly]
+        [OutputCache(Duration = 3600)]
         public ActionResult _Header()
         {
             return PartialView();
