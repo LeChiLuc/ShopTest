@@ -38,3 +38,9 @@ E:\_Hoctap\_Project\_MyProjects\Git\ShopTest\ShopTest.Data\obj\Debug\ShopTest.Da
 E:\_Hoctap\_Project\_MyProjects\Git\ShopTest\ShopTest.Data\obj\Debug\ShopTest.Data.csproj.GenerateResource.Cache
 E:\_Hoctap\_Project\_MyProjects\Git\ShopTest\ShopTest.Data\obj\Debug\ShopTest.Data.dll
 E:\_Hoctap\_Project\_MyProjects\Git\ShopTest\ShopTest.Data\obj\Debug\ShopTest.Data.pdb
+E:\_Hoctap\_Project\_MyProjects\Git\ShopTest\ShopTest.Data\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+E:\_Hoctap\_Project\_MyProjects\Git\ShopTest\ShopTest.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\_Hoctap\_Project\_MyProjects\Git\ShopTest\ShopTest.Data\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+E:\_Hoctap\_Project\_MyProjects\Git\ShopTest\ShopTest.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\_Hoctap\_Project\_MyProjects\Git\ShopTest\ShopTest.Data\obj\Debug\ShopTest.Data.Migrations.IntergrateAspnetIdentity.resources
+E:\_Hoctap\_Project\_MyProjects\Git\ShopTest\ShopTest.Data\obj\Debug\ShopTest.Data.Migrations.ChangeKey.resources

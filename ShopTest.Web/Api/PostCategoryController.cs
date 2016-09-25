@@ -1,12 +1,15 @@
-﻿using ShopTest.Model.Models;
+﻿using AutoMapper;
+using ShopTest.Model.Models;
 using ShopTest.Service;
 using ShopTest.Web.Infrastructure.Core;
+using ShopTest.Web.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using ShopTest.Web.Infrastructure.Extensions;
 
 namespace ShopTest.Web.Api
 {
@@ -24,22 +27,16 @@ namespace ShopTest.Web.Api
         {
             return CreateHttpResponse(request, () =>
             {
-                HttpResponseMessage response = null;
-                if (ModelState.IsValid)
-                {
-                    request.CreateErrorResponse(HttpStatusCode.BadRequest, ModelState);
-                }
-                else
-                {
-                    var listCategory = _postCategoryService.GetAll();
+                
+                var listCategory = _postCategoryService.GetAll();
+                var listPostCategoryVm = Mapper.Map<List<PostCategoryViewModel>>(listCategory);
 
-                    response = request.CreateResponse(HttpStatusCode.OK, listCategory);
-                }
+                HttpResponseMessage response = request.CreateResponse(HttpStatusCode.OK, listPostCategoryVm);
                 return response;
             });
         }
-
-        public HttpResponseMessage Post(HttpRequestMessage request,PostCategory postCategory)
+        [Route("add")]
+        public HttpResponseMessage Post(HttpRequestMessage request,PostCategoryViewModel postCategoryVm)
         {
             return CreateHttpResponse(request, () =>
             {
@@ -50,7 +47,9 @@ namespace ShopTest.Web.Api
                 }
                 else
                 {
-                    var category = _postCategoryService.Add(postCategory);
+                    PostCategory newPostCategory = new PostCategory();
+                    newPostCategory.UpdatePostCategory(postCategoryVm);//using ShopTest.Web.Infrastructure.Extensions at PostCategoryController Api
+                    var category = _postCategoryService.Add(newPostCategory);
                     _postCategoryService.Save();
 
                     response = request.CreateResponse(HttpStatusCode.Created, category);
@@ -58,7 +57,8 @@ namespace ShopTest.Web.Api
                 return response;
             });
         }
-        public HttpResponseMessage Put(HttpRequestMessage request, PostCategory postCategory)
+        [Route("update")]
+        public HttpResponseMessage Put(HttpRequestMessage request, PostCategoryViewModel postCategoryVm)
         {
             return CreateHttpResponse(request, () =>
             {
@@ -69,7 +69,9 @@ namespace ShopTest.Web.Api
                 }
                 else
                 {
-                    _postCategoryService.Update(postCategory);
+                    var postCategoryDb = _postCategoryService.GetById(postCategoryVm.ID);
+                    postCategoryDb.UpdatePostCategory(postCategoryVm);
+                    _postCategoryService.Update(postCategoryDb);
                     _postCategoryService.Save();
 
                     response = request.CreateResponse(HttpStatusCode.OK);

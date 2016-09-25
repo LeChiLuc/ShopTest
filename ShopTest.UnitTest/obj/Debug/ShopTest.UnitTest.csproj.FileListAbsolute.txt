@@ -110,3 +110,17 @@ E:\_Hoctap\_Project\_MyProjects\Git\ShopTest\ShopTest.UnitTest\bin\Debug\System.
 E:\_Hoctap\_Project\_MyProjects\Git\ShopTest\ShopTest.UnitTest\bin\Debug\System.Web.Http.WebHost.xml
 E:\_Hoctap\_Project\_MyProjects\Git\ShopTest\ShopTest.UnitTest\bin\Debug\System.Net.Http.Formatting.xml
 E:\_Hoctap\_Project\_MyProjects\Git\ShopTest\ShopTest.UnitTest\bin\Debug\Newtonsoft.Json.xml
+E:\_Hoctap\_Project\_MyProjects\Git\ShopTest\ShopTest.UnitTest\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\_Hoctap\_Project\_MyProjects\Git\ShopTest\ShopTest.UnitTest\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+E:\_Hoctap\_Project\_MyProjects\Git\ShopTest\ShopTest.UnitTest\bin\Debug\Microsoft.AspNet.Identity.Owin.dll
+E:\_Hoctap\_Project\_MyProjects\Git\ShopTest\ShopTest.UnitTest\bin\Debug\Microsoft.Owin.Security.dll
+E:\_Hoctap\_Project\_MyProjects\Git\ShopTest\ShopTest.UnitTest\bin\Debug\Microsoft.Owin.Security.Cookies.dll
+E:\_Hoctap\_Project\_MyProjects\Git\ShopTest\ShopTest.UnitTest\bin\Debug\Autofac.Integration.WebApi.dll
+E:\_Hoctap\_Project\_MyProjects\Git\ShopTest\ShopTest.UnitTest\bin\Debug\Microsoft.Owin.Security.OAuth.dll
+E:\_Hoctap\_Project\_MyProjects\Git\ShopTest\ShopTest.UnitTest\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\_Hoctap\_Project\_MyProjects\Git\ShopTest\ShopTest.UnitTest\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+E:\_Hoctap\_Project\_MyProjects\Git\ShopTest\ShopTest.UnitTest\bin\Debug\Microsoft.AspNet.Identity.Owin.xml
+E:\_Hoctap\_Project\_MyProjects\Git\ShopTest\ShopTest.UnitTest\bin\Debug\Microsoft.Owin.Security.xml
+E:\_Hoctap\_Project\_MyProjects\Git\ShopTest\ShopTest.UnitTest\bin\Debug\Microsoft.Owin.Security.Cookies.xml
+E:\_Hoctap\_Project\_MyProjects\Git\ShopTest\ShopTest.UnitTest\bin\Debug\Autofac.Integration.WebApi.xml
+E:\_Hoctap\_Project\_MyProjects\Git\ShopTest\ShopTest.UnitTest\bin\Debug\Microsoft.Owin.Security.OAuth.xml
