@@ -18,7 +18,7 @@ namespace ShopTest.Service
     {
         IErrorRepository _errorRepository;
         IUnitOfWork _unitOfWork;
-        public ErrorService(IErrorRepository errorRepository,UnitOfWork unitOfWork)
+        public ErrorService(IErrorRepository errorRepository, IUnitOfWork unitOfWork)
         {
             this._errorRepository = errorRepository;
             this._unitOfWork = unitOfWork;
