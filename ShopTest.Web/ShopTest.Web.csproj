@@ -243,6 +243,7 @@
     <Content Include="app\shared\directives\pagerDirective.js" />
     <Content Include="app\shared\filters\statusFilter.js" />
     <Content Include="app\shared\services\apiService.js" />
+    <Content Include="app\shared\services\notificationService.js" />
     <Content Include="Assets\Admin\css\AdminLTE.css" />
     <Content Include="Assets\Admin\css\AdminLTE.min.css" />
     <Content Include="Assets\Admin\css\skins\skin-black-light.css" />
@@ -479,6 +480,10 @@
     <Content Include="Assets\Admin\libs\slimScroll\examples\style.css" />
     <Content Include="Assets\Admin\libs\slimScroll\jquery.slimscroll.js" />
     <Content Include="Assets\Admin\libs\slimScroll\jquery.slimscroll.min.js" />
+    <Content Include="Assets\Admin\libs\toastr\toastr.css" />
+    <Content Include="Assets\Admin\libs\toastr\toastr.js" />
+    <Content Include="Assets\Admin\libs\toastr\toastr.min.css" />
+    <Content Include="Assets\Admin\libs\toastr\toastr.min.js" />
     <Content Include="Assets\Clients\css\bootstrap.css" />
     <Content Include="Assets\Clients\css\custom.css" />
     <Content Include="Assets\Clients\css\etalage.css" />
@@ -714,6 +719,13 @@
     <Content Include="Assets\Admin\libs\slimScroll\package.json" />
     <Content Include="Assets\Admin\libs\slimScroll\README.md" />
     <Content Include="app\shared\modules\shoptest.common.js" />
+    <Content Include="Assets\Admin\libs\toastr\.bower.json" />
+    <Content Include="Assets\Admin\libs\toastr\bower.json" />
+    <Content Include="Assets\Admin\libs\toastr\LICENSE" />
+    <Content Include="Assets\Admin\libs\toastr\README.md" />
+    <Content Include="Assets\Admin\libs\toastr\toastr.js.map" />
+    <Content Include="Assets\Admin\libs\toastr\toastr.less" />
+    <Content Include="Assets\Admin\libs\toastr\toastr.scss" />
     <None Include="Project_Readme.html" />
     <Content Include="Views\Admin\Index.cshtml" />
   </ItemGroup>

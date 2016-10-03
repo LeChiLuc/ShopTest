@@ -18,6 +18,7 @@ namespace ShopTest.Service
         void Delete(int id);
 
         IEnumerable<ProductCategory> GetAll();
+        IEnumerable<ProductCategory> GetAll(string keyword);
 
         ProductCategory GetById(int id);
 
@@ -47,6 +48,14 @@ namespace ShopTest.Service
         public IEnumerable<ProductCategory> GetAll()
         {
             return _productCategoryRepository.GetAll();
+        }
+
+        public IEnumerable<ProductCategory> GetAll(string keyword)
+        {
+            if(!string.IsNullOrEmpty(keyword))
+                return _productCategoryRepository.GetMulti(x=>x.Name.Contains(keyword)|| x.Description.Contains(keyword));
+            else
+                return _productCategoryRepository.GetAll();
         }
 
         public ProductCategory GetById(int id)
