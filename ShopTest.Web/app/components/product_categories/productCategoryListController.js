@@ -13,6 +13,7 @@
         $scope.keyword = '';
 
         $scope.search = search;
+
         function search() {
             getProductCategories();
         }
